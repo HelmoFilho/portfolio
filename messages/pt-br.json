@@ -1,0 +1,41 @@
+{
+    "Sidebar": {
+        "home": "Home",
+        "services": "Serviços",
+        "experience": "Experiência",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "Main": {
+        "Home": {
+            "introduction": "Olá, me chamo ",
+            "summary": "Sou desenvolvedor de backend com especialidade na linguagem Python principalmente nos frameworks Flask e FastApi. Possuo 3 anos de desenvolvimento de software de forma profissional desde a criação do backend, criação e estruturação de banco de dados (desde a coleta a criação de consultas) e criação e aplicação de regras de negocios e boas práticas. Atualmente estou desenvolvendo minhas habilidades em Java e Go."
+        },
+        "Services": {
+            "sectionHeader": "Serviços"
+        },
+        "Projects": {
+            "sectionHeader": "Projetos",
+            "repository": "Repositorio de projetos",
+            "CobapCargoProject": {
+                "name": "Cobap - Gerenciamento de entrega",
+                "description": "Participei ativamente da criação e execução do Backend, dos ETLs e do gerenciamento e modelagem do banco de dados. Sistema responsavel por gerenciar entregas para a empresa."
+            },
+            "JSMarketplaceProject": {
+                "name": "Marketplace B2B",
+                "description": "Programador principal do backend para o sistema de gerenciamento do marketplace e do marketplace em si. Tratei tambem do gerenciamento do banco de dados e dos ETLs de dados entre a aplicação e o data warehouse da empresa."
+            },
+            "PinheiroSeparationProject": {
+                "name": "Pinheiro - Gerenciamento de separação de produtos",
+                "description": "Participei ativamente da criação e execução do Backend, dos ETLs e do gerenciamento e modelagem do banco de dados. Sistema responsavel por gerenciar separações de produtos e restoque para empresas parceiras do grupo pinheiro."
+            }
+        },
+        "Contact": {
+            "sectionHeader": "Contatos",
+            "header": "Entre em contato comigo"
+        }
+    },
+    "Footer": {
+        "copyright": "Copyright © 2024 HF | Todos os direitos reservados"
+    }
+}

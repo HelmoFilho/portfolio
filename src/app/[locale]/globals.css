@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@100/200;300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply box-border m-0 p-0 scroll-smooth scroll-mt-[13svh] lg:scroll-mt-[20svh] ;
+    }
+
+    html {
+        @apply m-0 p-0 scroll-smooth ;
+    }
+
+    html::-webkit-scrollbar {
+        width: 0.3rem;
+    }
+    
+    html::-webkit-scrollbar-track {
+        @apply bg-slate-200 dark:bg-gray-800;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        @apply bg-emerald-600;
+    }
+
+    body {
+        @apply bg-slate-200 dark:bg-slate-900 font-Poppins;
+    }
+}
+
+/* Header */
+
+.header-logo-image {
+    @apply h-[3.55rem] w-auto left-[33%] md:h-24 lg:h-16
+}
+
+.nav-button {
+    @apply flex items-center justify-start flex-row w-full gap-x-3 px-4 py-2 rounded-lg max-w-[90%]
+        tablet:py-4;
+}
+
+.nav-button-icon {
+    @apply size-6 tablet:size-10;
+}
+
+.nav-button-text {
+    @apply text-lg tablet:text-2xl;
+}
