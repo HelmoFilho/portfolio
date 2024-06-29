@@ -1,6 +1,5 @@
-// 'use client'
+'use client'
 import { CloseButton, DisclosurePanel, Transition } from '@headlessui/react';
-import { useTranslations } from 'next-intl';
 
 import { BsFillHouseFill } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
@@ -10,9 +9,10 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 import IconsSidebar from './sidebar/IconsSidebar';
 import ThemeSwitch from './sidebar/ThemeSwitch';
 
+''
+
 const Sidebar = () => {
 
-	const translation = useTranslations('Sidebar');
 	return (
 		<Transition
 			enter="duration-500 ease-out"
@@ -51,7 +51,7 @@ const Sidebar = () => {
 							<span className={`nav-button-text text-gray-700 dark:text-gray-400
 							lg:group-hover:text-gray-900 lg:dark:group-hover:text-gray-200
 							group-active:group-hover:text-green-700 dark:group-active:group-hover:text-green-700
-						`}>{translation("home")}</span>
+						`}>{"Home"}</span>
 						</a>
 						<a className="nav-button group" href="#services">
 							<MdClass className={`nav-button-icon text-gray-700 dark:text-gray-300
@@ -60,7 +60,7 @@ const Sidebar = () => {
 							<span className={`nav-button-text text-gray-700 dark:text-gray-400
 							lg:group-hover:text-gray-900 lg:dark:group-hover:text-gray-200
 							group-active:group-hover:text-green-700 dark:group-active:group-hover:text-green-700
-						`}>{translation("services")}</span>
+						`}>{"Services"}</span>
 						</a>
 						<a className="nav-button group" href="#experiences">
 							<MdWork className={`nav-button-icon text-gray-700 dark:text-gray-300
@@ -69,7 +69,7 @@ const Sidebar = () => {
 							<span className={`nav-button-text text-gray-700 dark:text-gray-400
 							lg:group-hover:text-gray-900 lg:dark:group-hover:text-gray-200
 							group-active:group-hover:text-green-700 dark:group-active:group-hover:text-green-700
-						`}>{translation("experience")}</span>
+						`}>{"Experiences"}</span>
 						</a>
 						<a className="nav-button group" href="#projects">
 							<RiGitRepositoryFill className={`nav-button-icon text-gray-700 dark:text-gray-300
@@ -78,7 +78,7 @@ const Sidebar = () => {
 							<span className={`nav-button-text text-gray-700 dark:text-gray-400
 							lg:group-hover:text-gray-900 lg:dark:group-hover:text-gray-200
 							group-active:group-hover:text-green-700 dark:group-active:group-hover:text-green-700
-						`}>{translation("projects")}</span>
+						`}>{"Projects"}</span>
 						</a>
 						<a className="nav-button group" href="#contact">
 							<IoIosContact className={`nav-button-icon text-gray-700 dark:text-gray-300
@@ -87,7 +87,7 @@ const Sidebar = () => {
 							<span className={`nav-button-text text-gray-700 dark:text-gray-400
 							group-hover:text-gray-900 lg:dark:group-hover:text-gray-200
 							group-active:group-hover:text-green-700 dark:group-active:group-hover:text-green-700
-						`}>{translation("contact")}</span>
+						`}>{"Contacs"}</span>
 						</a>
 					</div>
 					<div className={`h-[30%] w-4/5`}>

@@ -1,15 +1,13 @@
-import { useTranslations } from 'next-intl';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Section from '../section/Section';
 
 const Contact = () => {
-	const t = useTranslations('Main.Contact');
 	return (
-		<Section head={t("sectionHeader")} anchor={"contact"}>
+		<Section head={"Contact"} anchor={"contact"}>
 			<div className='flex items-center justify-center flex-col gap-4'>
 				<h3 className="text-xl md:text-3xl lg:text-2xl">
-					{t("header")}
+					{"Let's stay in touch!"}
 				</h3>
 				<h4 className='text-lg md:text-2xl lg:text-lg font-medium text-emerald-800 dark:text-emerald-400 mb-6'>
 					helmofilho09@gmail.com

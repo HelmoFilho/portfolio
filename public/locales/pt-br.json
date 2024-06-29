@@ -16,7 +16,7 @@
         },
         "Projects": {
             "sectionHeader": "Projetos",
-            "repository": "Repositorio de projetos",
+            "repository": "Repositorio dos meus projetos",
             "CobapCargoProject": {
                 "name": "Cobap - Gerenciamento de entrega",
                 "description": "Participei ativamente da criação e execução do Backend, dos ETLs e do gerenciamento e modelagem do banco de dados. Sistema responsavel por gerenciar entregas para a empresa."

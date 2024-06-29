@@ -16,7 +16,7 @@
         },
         "Projects": {
             "sectionHeader": "Projects",
-            "repository": "Repository of projects",
+            "repository": "repository of my projects",
             "CobapCargoProject": {
                 "name": "Cobap - Delivery management",
                 "description": "I actively participated in the creation and execution of the Backend, ETLs and database management and modeling. System responsible for managing deliveries for the company."

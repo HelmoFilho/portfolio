@@ -1,13 +1,8 @@
-import { useLocale, useTranslations } from 'next-intl';
 import Section from '../section/Section';
 import ServiceBlock from './ServiceBlock';
 
 const Services = () => {
-
-	const locale = useLocale()
-	const t = useTranslations('Main.Services');
-
-	const services = locale === "en" ? [
+	const services = true ? [
 		{
 			"heading": "Backend Developer",
 			"text": `Backend developer focused on creating systems with high availability, quality and security.`,
@@ -61,7 +56,7 @@ const Services = () => {
 	]
 
 	return (
-		<Section head={t("sectionHeader")} anchor={"services"}>
+		<Section head={"Services"} anchor={"services"}>
 			<div className='flex flex-wrap px-8 md:px-16 lg:px-24 gap-8 lg:gap-12'>
 				{services.map((service, idx) => (
 					<ServiceBlock key={idx} heading={service.heading} text={service.text}

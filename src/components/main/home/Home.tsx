@@ -1,6 +1,4 @@
 'use client'
-
-import { useLocale, useTranslations } from 'next-intl';
 import Typewriter from 'typewriter-effect';
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -8,11 +6,7 @@ import { SiGmail } from "react-icons/si";
 
 const Home = () => {
 
-    const locale = useLocale()
-
-    const t = useTranslations('Main.Home');
-
-    let professions = locale === "en" ?
+    let professions = true ?
         ["Software Developer", "Back-End Developer", "Freelancer"] :
         ["Desenvolvedor de Software", "Programador Back-End", "Freelancer"]
 
@@ -24,7 +18,7 @@ const Home = () => {
                     className='relative h-auto w-[45vw] md:w-[30vw] rounded-[90%] shadow-[0px_0px_20px] shadow-green-700' />
             </div>
             <div className="pt-8 lg:">
-                <h1 className="text-3xl md:text-5xl font-bold">{t("introduction")}<span className='text-green-600'>Helmo</span></h1>
+                <h1 className="text-3xl md:text-5xl font-bold">{"Hi, my name is "}<span className='text-green-600'>Helmo</span></h1>
                 <div className="w-full pt-1 md:pt-4">
                     <h3 className="text-4xl font-bold h-24 md:h-10"><span className='inline text-green-600'>
                         <Typewriter options={{
@@ -40,7 +34,7 @@ const Home = () => {
                     </h3>
                 </div>
                 <p className='text-justify font-medium relative text-base md:text-2xl pt-6 md:pt-4'>
-                    {t("summary")}
+                    {"I'm a backend developer specialized in the Python language, especially the Flask and FastApi frameworks. I've been developing software professionally for 3 years, from creating the backend, creating and structuring databases (from collecting data to creating queries) and creating and applying business rules and best practices. I am currently developing my skills in Java and Go."}
                 </p>
                 <div className="flex flex-row items-center justify-evenly lg:justify-start lg:gap-x-6 pt-6 md:pt-8">
                     <a href="https://www.linkedin.com/in/helmo-filho-02370b141/" target="_blank" className={`

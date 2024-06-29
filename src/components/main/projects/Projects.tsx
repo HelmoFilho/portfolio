@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import Section from '../section/Section';
 
 import CobapCargoProject from './projectModals/CobapCargoProject';
@@ -7,10 +6,8 @@ import PinheiroSeparationProject from './projectModals/PinheiroSeparationProject
 
 const Projects = () => {
 
-  const t = useTranslations('Main.Projects');
-
   return (
-    <Section head={t("sectionHeader")} anchor={"projects"}>
+    <Section head={"Projects"} anchor={"projects"}>
       <div
         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
       >
@@ -22,7 +19,7 @@ const Projects = () => {
         <a className='text-xl text-green-700 dark:text-green-500 font-extrabold'
           href="https://github.com/HelmoFilho?tab=repositories" target="_blank"
         >
-          {t("repository")}
+          {"repository of my projects"}
         </a>
       </div>
     </Section>

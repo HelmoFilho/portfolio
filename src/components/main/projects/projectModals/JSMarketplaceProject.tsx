@@ -4,7 +4,6 @@ import Carousel from '@/components/carousel/Carousel';
 import CloseModalButton from '@/components/modal/CloseModalButton';
 import OpenModalButton from '@/components/modal/OpenModalButton';
 import { AnimatePresence } from "framer-motion";
-import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import Modal from '../../../modal/Modal';
 import ProjectCard from '../ProjectCard';
@@ -12,8 +11,6 @@ import ProjectCard from '../ProjectCard';
 import { SiFlask, SiMicrosoftsqlserver, SiOpencv } from "react-icons/si";
 
 const JSMarketplaceProject = () => {
-
-	const t = useTranslations('Main.Projects.JSMarketplaceProject');
 
 	const [modalOpen, setModalOpen] = useState(false);
 
@@ -63,7 +60,7 @@ const JSMarketplaceProject = () => {
 	return (
 		<>
 			<OpenModalButton openHandle={openModal}>
-				<ProjectCard src={"./images/projects/jsmarketplace/02.webp"} projectName={t("name")} />
+				<ProjectCard src={"./images/projects/jsmarketplace/02.webp"} projectName={"Marketplace B2B"} />
 			</OpenModalButton>
 
 			<AnimatePresence
@@ -82,9 +79,9 @@ const JSMarketplaceProject = () => {
 							<h3
 								className='text-2xl uppercase text-zinc-700 dark:text-zinc-200  font-bold text-wrap text-center
 								md:text-4xl'
-							>{t("name")}</h3>
+							>{"Marketplace B2B"}</h3>
 							<p className='text-zinc-700 dark:text-zinc-200 font-medium md:text-xl'>
-								{t("description")}
+								{"Main backend programmer for the marketplace management system and the marketplace itself. I also managed the database and data ETLs between the application and the company's data warehouse."}
 							</p>
 							<div className='flex flex-row items-center justify-start gap-3'>
 								<div className='border-[2px] border-slate-600 rounded-full size-16 md:size-20 flex items-center justify-center'>
